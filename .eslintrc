@@ -1,6 +1,3 @@
 {
-    "extends": "@apify",
-    "env": {
-        "jest/globals": true
-    }
+    "extends":[ "@apify", "plugin:jest/recommended"]
 }
