@@ -1,11 +1,11 @@
 const { matchersAsKeyed } = require('../lib/matchers');
 const { match } = require('../lib/match');
-const facebookUrl = require('../lib/main');
-const validUrls = require('./data/anEvent.json');
-const invalidUrls = [
-    ...require('./data/not_facebook.json'),
-    ...require('./data/aPost.json'),
-];
+const { parse } = require('../lib/main');
+
+const { data, getSamples } = require('./data');
+
+const validUrls = getSamples(data.anEvent);
+const invalidUrls = getSamples(data.notMatched, data.aPost);
 
 describe('Unit > anEvent', () => {
     for (const url of validUrls) {
@@ -26,13 +26,13 @@ describe('Unit > anEvent', () => {
 describe('Main > anEvent', () => {
     for (const url of validUrls) {
         it(`should detect a event in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.anEvent', true);
+            expect(parse(url)).toHaveProperty('matches.anEvent', true);
         });
     }
 
     for (const url of invalidUrls) {
         it(`should not detect a event in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.anEvent', false);
+            expect(parse(url)).toHaveProperty('matches.anEvent', false);
         });
     }
 });

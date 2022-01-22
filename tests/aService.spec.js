@@ -1,13 +1,13 @@
 const { matchersAsKeyed } = require('../lib/matchers');
 const { match } = require('../lib/match');
-const facebookUrl = require('../lib/main');
-const validUrls = require('./data/aService.json');
-const invalidUrls = [
-    ...require('./data/not_facebook.json'),
-    ...require('./data/aPost.json'),
-    ...require('./data/anEvent.json'),
-    ...require('./data/aJob.json'),
-];
+const { parse } = require('../lib/main');
+
+const { data, getSamples } = require('./data');
+
+const validUrls = getSamples(data.aService);
+const invalidUrls = getSamples(
+    data.notMatched, data.aJob, data.anEvent,
+);
 
 describe('Unit > aService', () => {
     for (const url of validUrls) {
@@ -28,13 +28,13 @@ describe('Unit > aService', () => {
 describe('Main > aService', () => {
     for (const url of validUrls) {
         it(`should detect a service in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.aService', true);
+            expect(parse(url)).toHaveProperty('matches.aService', true);
         });
     }
 
     for (const url of invalidUrls) {
         it(`should not detect a service in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.aService', false);
+            expect(parse(url)).toHaveProperty('matches.aService', false);
         });
     }
 });

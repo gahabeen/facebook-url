@@ -1,6 +1,7 @@
-[] Import large dataset to check for unknown urls
-[] Fix thoses unknown urls
-[] Integrate all the dataset into the tests
+[x] Import large dataset to check for unknown urls
+[x] Fix thoses unknown urls
+[x] Integrate all the dataset into the tests
+[] Parse category from URL
 [] Generate /pages/category/<category>
-[] Generate sub pages for a page (and more if it makes sense)
-[] Note the sub path for the current URL (interesting to know that the page has it)
+[] Generate links for a page (and more if it makes sense)
+[~] Detect sub-paths + annotate parent

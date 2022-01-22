@@ -1,11 +1,11 @@
 const { matchersAsKeyed } = require('../lib/matchers');
 const { match } = require('../lib/match');
-const facebookUrl = require('../lib/main');
-const validUrls = require('./data/aPageByCategory.json');
-const invalidUrls = [
-    ...require('./data/not_facebook.json'),
-    ...require('./data/aPage.json'),
-    ...require('./data/aGroup.json')];
+const { parse } = require('../lib/main');
+
+const { data, getSamples } = require('./data');
+
+const validUrls = getSamples(data.aPageByCategory);
+const invalidUrls = getSamples(data.notMatched, data.aPage, data.aGroup);
 
 describe('Unit > aPageByCategory', () => {
     for (const url of validUrls) {
@@ -26,13 +26,13 @@ describe('Unit > aPageByCategory', () => {
 describe('Main > aPageByCategory', () => {
     for (const url of validUrls) {
         it(`should detect a page in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.aPageByCategory', true);
+            expect(parse(url)).toHaveProperty('matches.aPageByCategory', true);
         });
     }
 
     for (const url of invalidUrls) {
         it(`should not detect a page in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.aPageByCategory', false);
+            expect(parse(url)).toHaveProperty('matches.aPageByCategory', false);
         });
     }
 });

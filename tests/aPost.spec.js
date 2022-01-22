@@ -1,11 +1,13 @@
 const { matchersAsKeyed } = require('../lib/matchers');
 const { match } = require('../lib/match');
-const facebookUrl = require('../lib/main');
-const validUrls = require('./data/aPost.json');
-const invalidUrls = [
-    ...require('./data/not_facebook.json'),
-    ...require('./data/aPageByCategory.json'),
-];
+const { parse } = require('../lib/main');
+
+const { data, getSamples } = require('./data');
+
+const validUrls = getSamples(data.aPost);
+const invalidUrls = getSamples(
+    data.notMatched, data.aPageByCategory,
+);
 
 describe('Unit > aPost', () => {
     for (const url of validUrls) {
@@ -26,13 +28,13 @@ describe('Unit > aPost', () => {
 describe('Main > aPost', () => {
     for (const url of validUrls) {
         it(`should detect a post in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.aPost', true);
+            expect(parse(url)).toHaveProperty('matches.aPost', true);
         });
     }
 
     for (const url of invalidUrls) {
         it(`should not detect a post in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.aPost', false);
+            expect(parse(url)).toHaveProperty('matches.aPost', false);
         });
     }
 });

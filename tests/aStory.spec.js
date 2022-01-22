@@ -1,16 +1,14 @@
 const { matchersAsKeyed } = require('../lib/matchers');
 const { match } = require('../lib/match');
-const facebookUrl = require('../lib/main');
-const validUrls = require('./data/aStory.json');
-const invalidUrls = [
-    ...require('./data/not_facebook.json'),
-    ...require('./data/aPost.json'),
-    ...require('./data/aGroup.json'),
-    ...require('./data/anEvent.json'),
-    ...require('./data/aPage.json'),
-    ...require('./data/aPageAsPg.json'),
-    ...require('./data/aPageByCategory.json'),
-];
+const { parse } = require('../lib/main');
+
+const { data, getSamples } = require('./data');
+
+const validUrls = getSamples(data.aStory);
+const invalidUrls = getSamples(
+    data.notMatched, data.aPost, data.aGroup, data.anEvent,
+    data.aPage, data.aPageAsPg, data.aPageByCategory,
+);
 
 describe('Unit > aStory', () => {
     for (const url of validUrls) {
@@ -31,13 +29,13 @@ describe('Unit > aStory', () => {
 describe('Main > aStory', () => {
     for (const url of validUrls) {
         it(`should detect a story in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.aStory', true);
+            expect(parse(url)).toHaveProperty('matches.aStory', true);
         });
     }
 
     for (const url of invalidUrls) {
         it(`should not detect a story in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.aStory', false);
+            expect(parse(url)).toHaveProperty('matches.aStory', false);
         });
     }
 });

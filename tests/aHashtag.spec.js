@@ -1,46 +1,42 @@
 const { matchersAsKeyed } = require('../lib/matchers');
 const { match } = require('../lib/match');
-const facebookUrl = require('../lib/main');
-const validUrls = require('./data/aHashtag.json');
-const invalidUrls = [
-    ...require('./data/not_facebook.json'),
-    ...require('./data/aPost.json'),
-    ...require('./data/aGroup.json'),
-    ...require('./data/anEvent.json'),
-    ...require('./data/aPage.json'),
-    ...require('./data/aPageAsPg.json'),
-    ...require('./data/aPageByCategory.json'),
-    ...require('./data/aJob.json'),
-    ...require('./data/aVideo.json'),
-    ...require('./data/aPublic.json'),
-];
+const { parse } = require('../lib/main');
 
-describe('Unit > aHashtagSearch ', () => {
+const { data, getSamples } = require('./data');
+
+const validUrls = getSamples(data.aHashtag);
+const invalidUrls = getSamples(
+    data.notMatched, data.aPost, data.aGroup, data.anEvent,
+    data.aPage, data.aPageAsPg, data.aPageByCategory,
+    data.aJob, data.aVideo, data.aPublic,
+);
+
+describe('Unit > aHashtag', () => {
     for (const url of validUrls) {
         it(`should detect a hashtag in ${url}`, () => {
-            const result = match(url, matchersAsKeyed.aHashtagSearch)
+            const result = match(url, matchersAsKeyed.aHashtag);
             expect(result).toHaveProperty('hashtag.id');
         });
-    };
+    }
 
     for (const url of invalidUrls) {
         it(`should not detect a hashtag in ${url}`, () => {
-            const result = match(url, matchersAsKeyed.aHashtagSearch)
+            const result = match(url, matchersAsKeyed.aHashtag);
             expect(result).toHaveProperty('hashtag', undefined);
         });
-    };
-})
+    }
+});
 
-describe('Main > aHashtagSearch', () => {
+describe('Main > aHashtag', () => {
     for (const url of validUrls) {
         it(`should detect a hashtag in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.aHashtagSearch', true);
+            expect(parse(url)).toHaveProperty('matches.aHashtag', true);
         });
-    };
+    }
 
     for (const url of invalidUrls) {
         it(`should not detect a hashtag in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.aHashtagSearch', false);
+            expect(parse(url)).toHaveProperty('matches.aHashtag', false);
         });
-    };
-})
+    }
+});

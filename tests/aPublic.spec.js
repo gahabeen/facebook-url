@@ -1,18 +1,15 @@
 const { matchersAsKeyed } = require('../lib/matchers');
 const { match } = require('../lib/match');
-const facebookUrl = require('../lib/main');
-const validUrls = require('./data/aPublic.json');
-const invalidUrls = [
-    ...require('./data/not_facebook.json'),
-    ...require('./data/aPost.json'),
-    ...require('./data/aGroup.json'),
-    ...require('./data/anEvent.json'),
-    ...require('./data/aPage.json'),
-    ...require('./data/aPageAsPg.json'),
-    ...require('./data/aPageByCategory.json'),
-    ...require('./data/aJob.json'),
-    ...require('./data/aVideo.json'),
-];
+const { parse } = require('../lib/main');
+
+const { data, getSamples } = require('./data');
+
+const validUrls = getSamples(data.aPublic);
+const invalidUrls = getSamples(
+    data.notMatched, data.aPost, data.aGroup, data.anEvent,
+    data.aPage, data.aPageAsPg, data.aPageByCategory,
+    data.aJob, data.aVideo,
+);
 
 describe('Unit > aPublic', () => {
     for (const url of validUrls) {
@@ -33,13 +30,13 @@ describe('Unit > aPublic', () => {
 describe('Main > aPublic', () => {
     for (const url of validUrls) {
         it(`should detect a public in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.aPublic', true);
+            expect(parse(url)).toHaveProperty('matches.aPublic', true);
         });
     }
 
     for (const url of invalidUrls) {
         it(`should not detect a public in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.aPublic', false);
+            expect(parse(url)).toHaveProperty('matches.aPublic', false);
         });
     }
 });

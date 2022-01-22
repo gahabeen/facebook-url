@@ -1,12 +1,13 @@
 const { matchersAsKeyed } = require('../lib/matchers');
 const { match } = require('../lib/match');
-const facebookUrl = require('../lib/main');
-const validUrls = require('./data/aVideo.json');
-const invalidUrls = [
-    ...require('./data/not_facebook.json'),
-    ...require('./data/aPost.json'),
-    ...require('./data/anEvent.json'),
-];
+const { parse } = require('../lib/main');
+
+const { data, getSamples } = require('./data');
+
+const validUrls = getSamples(data.aVideo);
+const invalidUrls = getSamples(
+    data.notMatched, data.aPost, data.anEvent,
+);
 
 describe('Unit > aVideo', () => {
     for (const url of validUrls) {
@@ -27,13 +28,13 @@ describe('Unit > aVideo', () => {
 describe('Main > aVideo', () => {
     for (const url of validUrls) {
         it(`should detect a video in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.aVideo', true);
+            expect(parse(url)).toHaveProperty('matches.aVideo', true);
         });
     }
 
     for (const url of invalidUrls) {
         it(`should not detect a video in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.aVideo', false);
+            expect(parse(url)).toHaveProperty('matches.aVideo', false);
         });
     }
 });

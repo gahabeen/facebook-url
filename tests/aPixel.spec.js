@@ -1,16 +1,14 @@
 const { matchersAsKeyed } = require('../lib/matchers');
 const { match } = require('../lib/match');
-const facebookUrl = require('../lib/main');
-const validUrls = require('./data/aPixel.json');
-const invalidUrls = [
-    ...require('./data/not_facebook.json'),
-    ...require('./data/aPost.json'),
-    ...require('./data/aGroup.json'),
-    ...require('./data/anEvent.json'),
-    ...require('./data/aPage.json'),
-    ...require('./data/aPageAsPg.json'),
-    ...require('./data/aPageByCategory.json'),
-];
+const { parse } = require('../lib/main');
+
+const { data, getSamples } = require('./data');
+
+const validUrls = getSamples(data.aPixel);
+const invalidUrls = getSamples(
+    data.notMatched, data.aPost, data.aGroup, data.anEvent,
+    data.aPage, data.aPageAsPg, data.aPageByCategory,
+);
 
 describe('Unit > aPixel', () => {
     for (const url of validUrls) {
@@ -31,13 +29,13 @@ describe('Unit > aPixel', () => {
 describe('Main > aPixel', () => {
     for (const url of validUrls) {
         it(`should detect a pixel in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.aPixel', true);
+            expect(parse(url)).toHaveProperty('matches.aPixel', true);
         });
     }
 
     for (const url of invalidUrls) {
         it(`should not detect a pixel in ${url}`, () => {
-            expect(facebookUrl(url)).toHaveProperty('matches.aPixel', false);
+            expect(parse(url)).toHaveProperty('matches.aPixel', false);
         });
     }
 });
