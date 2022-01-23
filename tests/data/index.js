@@ -87,7 +87,7 @@ const data = {
 };
 
 const getSamples = (...lists) => {
-    const maxByList = process.env.SAMPLES_MAX_NB || 10;
+    const maxByList = process.env.SAMPLES_MAX_NB || 1;
     const samples = [];
     for (const list of lists) {
         samples.push(

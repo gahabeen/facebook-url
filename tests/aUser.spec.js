@@ -26,13 +26,15 @@ describe('Unit > aUser', () => {
 describe('Main > aUser', () => {
     for (const url of validUrls) {
         it(`should detect a user in ${url}`, () => {
-            expect(parse(url)).toHaveProperty('matches.aUser', true);
+            const result = parse(url);
+            expect(result).toHaveProperty('matches.aUser', true);
         });
     }
 
     for (const url of invalidUrls) {
         it(`should not detect a user in ${url}`, () => {
-            expect(parse(url)).toHaveProperty('matches.aUser', false);
+            const result = parse(url);
+            expect(result).toHaveProperty('matches.aUser', false);
         });
     }
 });

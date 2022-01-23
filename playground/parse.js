@@ -1,7 +1,12 @@
-const { parse } = require('../index');
+const { matchersAsKeyed } = require('../lib/matchers');
+const { match } = require('../lib/match');
+const parse = require('../lib/parse');
 
-// const link = parse('https://www.facebook.com/pages/category/Cleaning-Service/Simply-Clean-Residential-Cleaning-Services-232528504672714/');
-const link = parse('https://ne-np.facebook.com/pgdreamsrealty/?ref=page_internal', { lazy: true });
+const url = 'https://ne-np.facebook.com/pgdreamsrealty/?ref=page_internal'
+const link = parse(url, { lazy: true });
 
-console.log(link.matches.aUser);
+console.log(link.matches.aPageAsPg);
 console.log(link.data);
+
+// const matched = match(url, matchersAsKeyed.aUser);
+// console.log(matched);

@@ -1,0 +1,2 @@
+require('./sort');
+require('./merge');
