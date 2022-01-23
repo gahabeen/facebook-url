@@ -9,14 +9,14 @@ describe('Unit > aFacebookDomain', () => {
     for (const url of validUrls) {
         it(`should detect a facebook domain in ${url}`, () => {
             const result = match(url, matchersAsKeyed.aFacebookDomain);
-            expect(result).toHaveProperty('facebook', true);
+            expect(result).toHaveProperty('domain.hostname');
         });
     }
 
     for (const url of invalidUrls) {
         it(`should not detect a facebook domain in ${url}`, () => {
             const result = match(url, matchersAsKeyed.aFacebookDomain);
-            expect(result).toHaveProperty('facebook', undefined);
+            expect(result).toHaveProperty('domain', undefined);
         });
     }
 });

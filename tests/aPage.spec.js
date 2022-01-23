@@ -1,6 +1,4 @@
- const { match, parse, matchersAsKeyed } = require('./methods');
-
-
+const { match, parse, matchersAsKeyed } = require('./methods');
 
 const { data, getSamples } = require('./data');
 

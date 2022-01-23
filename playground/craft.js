@@ -1,7 +1,7 @@
-const { parse, craft } = require('../index');
+const { parse, craft, CATEGORIES, HOSTNAMES, PROTOCOLS } = require('../index');
 
-const link = parse('https://www.facebook.com/pages/category/Cleaning-Service/Simply-Clean-Residential-Cleaning-Services-232528504672714/');
-const page = craft.onMobile.aPageAsPageCategory(link);
+const url = 'https://www.facebook.com/Simply-Clean-Residential-Cleaning-Services-232528504672714/';
+const link = parse(url, { lazy: false });
+const page = craft(link, { hostname: HOSTNAMES.basic, protocol: PROTOCOLS.unsecured }).aPlaceAndCategory(CATEGORIES.CLEANING_SERVICE);
 
-console.log(link.matchers);
 console.log(page);

@@ -1,7 +1,7 @@
-const parse = require('./lib/parse');
-const craft = require('./lib/craft');
+const parseResources = require('./lib/parse');
+const craftResources = require('./lib/craft');
 
 module.exports = {
-    parse,
-    craft,
+    ...parseResources,
+    ...craftResources,
 };
