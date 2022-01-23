@@ -1,6 +1,6 @@
-const { matchersAsKeyed } = require('../lib/matchers');
-const { match } = require('../lib/match');
-const { parse } = require('../lib/main');
+ const { match, parse, matchersAsKeyed } = require('./methods');
+
+
 const { data, getSamples } = require('./data');
 
 const validUrls = getSamples(data.aPageShop);

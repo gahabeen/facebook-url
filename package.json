@@ -11,7 +11,9 @@
   },
   "scripts": {
     "pre:test": "jest --clearCache",
-    "test": "jest --watchAll"
+    "test-fast": "set SAMPLES_MAX_NB=300&&jest --watchAll",
+    "test": "set SAMPLES_MAX_NB=300&&jest --watchAll",
+    "test-all": "set SAMPLES_MAX_NB=1000&&jest --watchAll"
   },
   "keywords": [],
   "author": "",
