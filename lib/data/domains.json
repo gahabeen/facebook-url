@@ -184,733 +184,628 @@
 
   {
     "hostname": "nb-no.facebook.com",
-    "subdomain": "nb-no",
     "language": "nb",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "nn-no.facebook.com",
-    "subdomain": "nn-no",
     "language": "nn",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "so-so.facebook.com",
-    "subdomain": "so-so",
     "language": "so",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "af-za.facebook.com",
-    "subdomain": "af-za",
     "language": "af",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "az-az.facebook.com",
-    "subdomain": "az-az",
     "language": "az",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "id-id.facebook.com",
-    "subdomain": "id-id",
     "language": "id",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ms-my.facebook.com",
-    "subdomain": "ms-my",
     "language": "ms",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "jv-id.facebook.com",
-    "subdomain": "jv-id",
     "language": "jv",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "bs-ba.facebook.com",
-    "subdomain": "bs-ba",
     "language": "bs",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "fr-fr.facebook.com",
-    "subdomain": "fr-fr",
     "language": "fr",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "br-fr.facebook.com",
-    "subdomain": "br-fr",
     "language": "br",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ca-es.facebook.com",
-    "subdomain": "ca-es",
     "language": "ca",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "co-fr.facebook.com",
-    "subdomain": "co-fr",
     "language": "co",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "cy-gb.facebook.com",
-    "subdomain": "cy-gb",
     "language": "cy",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "da-dk.facebook.com",
-    "subdomain": "da-dk",
     "language": "da",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "de-de.facebook.com",
-    "subdomain": "de-de",
     "language": "de",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "et-ee.facebook.com",
-    "subdomain": "et-ee",
     "language": "et",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "en-gb.facebook.com",
-    "subdomain": "en-gb",
     "language": "en",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "es-la.facebook.com",
-    "subdomain": "es-la",
     "language": "es",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "es-es.facebook.com",
-    "subdomain": "es-es",
     "language": "es",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "eu-es.facebook.com",
-    "subdomain": "eu-es",
     "language": "eu",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "tl-ph.facebook.com",
-    "subdomain": "tl-ph",
     "language": "tl",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "fr-ca.facebook.com",
-    "subdomain": "fr-ca",
     "language": "fr",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "fy-nl.facebook.com",
-    "subdomain": "fy-nl",
     "language": "fy",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ff-ng.facebook.com",
-    "subdomain": "ff-ng",
     "language": "ff",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "fo-fo.facebook.com",
-    "subdomain": "fo-fo",
     "language": "fo",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ga-ie.facebook.com",
-    "subdomain": "ga-ie",
     "language": "ga",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "gl-es.facebook.com",
-    "subdomain": "gl-es",
     "language": "gl",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "gn-py.facebook.com",
-    "subdomain": "gn-py",
     "language": "gn",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ha-ng.facebook.com",
-    "subdomain": "ha-ng",
     "language": "ha",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "hr-hr.facebook.com",
-    "subdomain": "hr-hr",
     "language": "hr",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "rw-rw.facebook.com",
-    "subdomain": "rw-rw",
     "language": "rw",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "it-it.facebook.com",
-    "subdomain": "it-it",
     "language": "it",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ik-us.facebook.com",
-    "subdomain": "ik-us",
     "language": "ik",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "sw-ke.facebook.com",
-    "subdomain": "sw-ke",
     "language": "sw",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ht-ht.facebook.com",
-    "subdomain": "ht-ht",
     "language": "ht",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ku-tr.facebook.com",
-    "subdomain": "ku-tr",
     "language": "ku",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "lv-lv.facebook.com",
-    "subdomain": "lv-lv",
     "language": "lv",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "lt-lt.facebook.com",
-    "subdomain": "lt-lt",
     "language": "lt",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "hu-hu.facebook.com",
-    "subdomain": "hu-hu",
     "language": "hu",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "mg-mg.facebook.com",
-    "subdomain": "mg-mg",
     "language": "mg",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "mt-mt.facebook.com",
-    "subdomain": "mt-mt",
     "language": "mt",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "nl-nl.facebook.com",
-    "subdomain": "nl-nl",
     "language": "nl",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "uz-uz.facebook.com",
-    "subdomain": "uz-uz",
     "language": "uz",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "pl-pl.facebook.com",
-    "subdomain": "pl-pl",
     "language": "pl",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "pt-br.facebook.com",
-    "subdomain": "pt-br",
     "language": "pt",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "pt-pt.facebook.com",
-    "subdomain": "pt-pt",
     "language": "pt",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ro-ro.facebook.com",
-    "subdomain": "ro-ro",
     "language": "ro",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "sc-it.facebook.com",
-    "subdomain": "sc-it",
     "language": "sc",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "sn-zw.facebook.com",
-    "subdomain": "sn-zw",
     "language": "sn",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "sq-al.facebook.com",
-    "subdomain": "sq-al",
     "language": "sq",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "sk-sk.facebook.com",
-    "subdomain": "sk-sk",
     "language": "sk",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "sl-si.facebook.com",
-    "subdomain": "sl-si",
     "language": "sl",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "fi-fi.facebook.com",
-    "subdomain": "fi-fi",
     "language": "fi",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "sv-se.facebook.com",
-    "subdomain": "sv-se",
     "language": "sv",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "vi-vn.facebook.com",
-    "subdomain": "vi-vn",
     "language": "vi",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "tr-tr.facebook.com",
-    "subdomain": "tr-tr",
     "language": "tr",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "nl-be.facebook.com",
-    "subdomain": "nl-be",
     "language": "nl",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "is-is.facebook.com",
-    "subdomain": "is-is",
     "language": "is",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "cs-cz.facebook.com",
-    "subdomain": "cs-cz",
     "language": "cs",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "el-gr.facebook.com",
-    "subdomain": "el-gr",
     "language": "el",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "be-by.facebook.com",
-    "subdomain": "be-by",
     "language": "be",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "bg-bg.facebook.com",
-    "subdomain": "bg-bg",
     "language": "bg",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "mk-mk.facebook.com",
-    "subdomain": "mk-mk",
     "language": "mk",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "mn-mn.facebook.com",
-    "subdomain": "mn-mn",
     "language": "mn",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ru-ru.facebook.com",
-    "subdomain": "ru-ru",
     "language": "ru",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "sr-rs.facebook.com",
-    "subdomain": "sr-rs",
     "language": "sr",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "tt-ru.facebook.com",
-    "subdomain": "tt-ru",
     "language": "tt",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "tg-tj.facebook.com",
-    "subdomain": "tg-tj",
     "language": "tg",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "uk-ua.facebook.com",
-    "subdomain": "uk-ua",
     "language": "uk",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ky-kg.facebook.com",
-    "subdomain": "ky-kg",
     "language": "ky",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "kk-kz.facebook.com",
-    "subdomain": "kk-kz",
     "language": "kk",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "hy-am.facebook.com",
-    "subdomain": "hy-am",
     "language": "hy",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "he-il.facebook.com",
-    "subdomain": "he-il",
     "language": "he",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ur-pk.facebook.com",
-    "subdomain": "ur-pk",
     "language": "ur",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "fa-ir.facebook.com",
-    "subdomain": "fa-ir",
     "language": "fa",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ps-af.facebook.com",
-    "subdomain": "ps-af",
     "language": "ps",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ne-np.facebook.com",
-    "subdomain": "ne-np",
     "language": "ne",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "mr-in.facebook.com",
-    "subdomain": "mr-in",
     "language": "mr",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "hi-in.facebook.com",
-    "subdomain": "hi-in",
     "language": "hi",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "as-in.facebook.com",
-    "subdomain": "as-in",
     "language": "as",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "bn-in.facebook.com",
-    "subdomain": "bn-in",
     "language": "bn",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "pa-in.facebook.com",
-    "subdomain": "pa-in",
     "language": "pa",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "gu-in.facebook.com",
-    "subdomain": "gu-in",
     "language": "gu",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "or-in.facebook.com",
-    "subdomain": "or-in",
     "language": "or",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ta-in.facebook.com",
-    "subdomain": "ta-in",
     "language": "ta",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "te-in.facebook.com",
-    "subdomain": "te-in",
     "language": "te",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "kn-in.facebook.com",
-    "subdomain": "kn-in",
     "language": "kn",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ml-in.facebook.com",
-    "subdomain": "ml-in",
     "language": "ml",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "si-lk.facebook.com",
-    "subdomain": "si-lk",
     "language": "si",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "th-th.facebook.com",
-    "subdomain": "th-th",
     "language": "th",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "lo-la.facebook.com",
-    "subdomain": "lo-la",
     "language": "lo",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "my-mm.facebook.com",
-    "subdomain": "my-mm",
     "language": "my",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ka-ge.facebook.com",
-    "subdomain": "ka-ge",
     "language": "ka",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "am-et.facebook.com",
-    "subdomain": "am-et",
     "language": "am",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "km-kh.facebook.com",
-    "subdomain": "km-kh",
     "language": "km",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "zh-tw.facebook.com",
-    "subdomain": "zh-tw",
     "language": "zh",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "zh-cn.facebook.com",
-    "subdomain": "zh-cn",
     "language": "zh",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "zh-hk.facebook.com",
-    "subdomain": "zh-hk",
     "language": "zh",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ja-jp.facebook.com",
-    "subdomain": "ja-jp",
     "language": "ja",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ko-kr.facebook.com",
-    "subdomain": "ko-kr",
     "language": "ko",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "ar-ar.facebook.com",
-    "subdomain": "ar-ar",
     "language": "ar",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "sy-sy.facebook.com",
-    "subdomain": "sy-sy",
     "interestingToQuery": true,
     "queryPriority": 2
   },
   {
     "hostname": "qz-mm.facebook.com",
-    "subdomain": "qz-mm",
     "interestingToQuery": true,
     "queryPriority": 20
   },
   {
     "hostname": "b-m.facebook.com",
-    "subdomain": "b-m",
     "interestingToQuery": true,
     "queryPriority": 20
   }
