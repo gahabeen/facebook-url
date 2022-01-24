@@ -1,7 +1,5 @@
  const { match, parse, matchersAsKeyed } = require('./methods');
 
-
-
 const { data, getSamples } = require('./data');
 
 const validUrls = getSamples(data.aKnownUrl);
@@ -11,14 +9,14 @@ describe('Unit > aKnownUrl', () => {
     for (const url of validUrls) {
         it(`should detect a known domain in ${url}`, () => {
             const result = match(url, matchersAsKeyed.aKnownUrl);
-            expect(result).toHaveProperty('known', true);
+            expect(result).toHaveProperty('paths');
         });
     }
 
     for (const url of invalidUrls) {
         it(`should not detect a known domain in ${url}`, () => {
             const result = match(url, matchersAsKeyed.aKnownUrl);
-            expect(result).toHaveProperty('known', undefined);
+            expect(result).toHaveProperty('paths', undefined);
         });
     }
 });
