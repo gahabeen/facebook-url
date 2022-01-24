@@ -1,6 +1,6 @@
 {
   "name": "facebook-url",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Parse, validate and sanitize any Facebook URL",
   "main": "index.js",
   "devDependencies": {
