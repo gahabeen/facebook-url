@@ -291,6 +291,11 @@
     "queryPriority": 2
   },
   {
+    "hostname": "en-us.facebook.com",
+    "language": "en",
+    "interestingToQuery": false
+  },
+  {
     "hostname": "es-la.facebook.com",
     "language": "es",
     "interestingToQuery": true,
