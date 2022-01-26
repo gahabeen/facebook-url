@@ -88,11 +88,6 @@
     "queryPriority": 10
   },
   {
-    "hostname": "web.facebook.com",
-    "interestingToQuery": true,
-    "queryPriority": 1
-  },
-  {
     "hostname": "x.facebook.com",
     "interestingToQuery": true,
     "queryPriority": 3
@@ -813,5 +808,9 @@
     "hostname": "b-m.facebook.com",
     "interestingToQuery": true,
     "queryPriority": 20
+  },
+  {
+    "hostname": "web.facebook.com",
+    "interestingToQuery": false
   }
 ]
